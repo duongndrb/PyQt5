@@ -1,0 +1,162 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'design_test_layout.ui'
+#
+# Created by: PyQt5 UI code generator 5.10.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtWidgets import QMessageBox
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(1024, 600)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.status = QtWidgets.QLabel(self.centralwidget)
+        self.status.setGeometry(QtCore.QRect(30, 210, 81, 31))
+        self.status.setObjectName("status")
+        self.volume = QtWidgets.QLabel(self.centralwidget)
+        self.volume.setGeometry(QtCore.QRect(30, 260, 81, 31))
+        self.volume.setObjectName("volume")
+        self.flowRate = QtWidgets.QLabel(self.centralwidget)
+        self.flowRate.setGeometry(QtCore.QRect(30, 330, 101, 31))
+        self.flowRate.setObjectName("flowRate")
+        self.target = QtWidgets.QLabel(self.centralwidget)
+        self.target.setGeometry(QtCore.QRect(30, 290, 81, 31))
+        self.target.setObjectName("target")
+        self.timeLeft = QtWidgets.QLabel(self.centralwidget)
+        self.timeLeft.setGeometry(QtCore.QRect(30, 370, 111, 51))
+        self.timeLeft.setObjectName("timeLeft")
+        self.power = QtWidgets.QPushButton(self.centralwidget)
+        self.power.setGeometry(QtCore.QRect(30, 480, 71, 71))
+        self.power.setObjectName("power")
+        self.runP1 = QtWidgets.QPushButton(self.centralwidget)
+        self.runP1.setGeometry(QtCore.QRect(130, 480, 71, 71))
+        self.runP1.setObjectName("runP1")
+        self.pauseP1 = QtWidgets.QPushButton(self.centralwidget)
+        self.pauseP1.setGeometry(QtCore.QRect(220, 480, 71, 71))
+        self.pauseP1.setObjectName("pauseP1")
+        self.setP1 = QtWidgets.QPushButton(self.centralwidget)
+        self.setP1.setGeometry(QtCore.QRect(310, 480, 71, 71))
+        self.setP1.setObjectName("setP1")
+        self.pauseP2 = QtWidgets.QPushButton(self.centralwidget)
+        self.pauseP2.setGeometry(QtCore.QRect(520, 480, 71, 71))
+        self.pauseP2.setObjectName("pauseP2")
+        self.setP2 = QtWidgets.QPushButton(self.centralwidget)
+        self.setP2.setGeometry(QtCore.QRect(610, 480, 71, 71))
+        self.setP2.setObjectName("setP2")
+        self.runP2 = QtWidgets.QPushButton(self.centralwidget)
+        self.runP2.setGeometry(QtCore.QRect(430, 480, 71, 71))
+        self.runP2.setObjectName("runP2")
+        self.pauseP3 = QtWidgets.QPushButton(self.centralwidget)
+        self.pauseP3.setGeometry(QtCore.QRect(830, 480, 71, 71))
+        self.pauseP3.setObjectName("pauseP3")
+        self.setP3 = QtWidgets.QPushButton(self.centralwidget)
+        self.setP3.setGeometry(QtCore.QRect(920, 480, 71, 71))
+        self.setP3.setObjectName("setP3")
+        self.runP3 = QtWidgets.QPushButton(self.centralwidget)
+        self.runP3.setGeometry(QtCore.QRect(740, 480, 71, 71))
+        self.runP3.setObjectName("runP3")
+        self.home = QtWidgets.QPushButton(self.centralwidget)
+        self.home.setGeometry(QtCore.QRect(20, 110, 81, 81))
+        self.home.setObjectName("home")
+        self.pump1 = QtWidgets.QLabel(self.centralwidget)
+        self.pump1.setGeometry(QtCore.QRect(120, 120, 251, 71))
+        self.pump1.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.pump1.setObjectName("pump1")
+        self.pump2 = QtWidgets.QLabel(self.centralwidget)
+        self.pump2.setGeometry(QtCore.QRect(420, 110, 251, 81))
+        self.pump2.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.pump2.setObjectName("pump2")
+        self.pump3 = QtWidgets.QLabel(self.centralwidget)
+        self.pump3.setGeometry(QtCore.QRect(740, 110, 251, 81))
+        self.pump3.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.pump3.setObjectName("pump3")
+        self.info = QtWidgets.QPushButton(self.centralwidget)
+        self.info.setGeometry(QtCore.QRect(950, 40, 61, 61))
+        self.info.setObjectName("info")
+        self.label_9 = QtWidgets.QLabel(self.centralwidget)
+        self.label_9.setGeometry(QtCore.QRect(130, 180, 251, 261))
+        self.label_9.setText("")
+        self.label_9.setObjectName("label_9")
+        self.menu = QtWidgets.QLabel(self.centralwidget)
+        self.menu.setGeometry(QtCore.QRect(390, 60, 431, 51))
+        self.menu.setAlignment(QtCore.Qt.AlignCenter)
+        self.menu.setObjectName("menu")
+        self.namePump = QtWidgets.QLabel(self.centralwidget)
+        self.namePump.setGeometry(QtCore.QRect(330, 0, 551, 61))
+        self.namePump.setAlignment(QtCore.Qt.AlignCenter)
+        self.namePump.setObjectName("namePump")
+        self.logo = QtWidgets.QLabel(self.centralwidget)
+        self.logo.setGeometry(QtCore.QRect(20, 10, 101, 81))
+        self.logo.setText("")
+        self.logo.setPixmap(QtGui.QPixmap("8916abae7ffe8ea0d7ef.jpg"))
+        self.logo.setScaledContents(True)
+        self.logo.setObjectName("logo")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1024, 22))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+        #click info
+        self.info.clicked.connect(self.show_info)
+
+        #logo
+        self.logo.clicked.connect(self.show_logo)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.status.setText(_translate("MainWindow", "STATUS"))
+        self.volume.setText(_translate("MainWindow", "Volume"))
+        self.flowRate.setText(_translate("MainWindow", "Flow rate"))
+        self.target.setText(_translate("MainWindow", "Target"))
+        self.timeLeft.setText(_translate("MainWindow", "Time left"))
+        self.power.setText(_translate("MainWindow", "POWER"))
+        self.runP1.setText(_translate("MainWindow", "RUN"))
+        self.pauseP1.setText(_translate("MainWindow", "PAUSE"))
+        self.setP1.setText(_translate("MainWindow", "SET"))
+        self.pauseP2.setText(_translate("MainWindow", "PAUSE"))
+        self.setP2.setText(_translate("MainWindow", "SET"))
+        self.runP2.setText(_translate("MainWindow", "RUN"))
+        self.pauseP3.setText(_translate("MainWindow", "PAUSE"))
+        self.setP3.setText(_translate("MainWindow", "SET"))
+        self.runP3.setText(_translate("MainWindow", "RUN"))
+        self.home.setText(_translate("MainWindow", "HOME"))
+        self.pump1.setText(_translate("MainWindow", "PUMP 1"))
+        self.pump2.setText(_translate("MainWindow", "PUMP 2"))
+        self.pump3.setText(_translate("MainWindow", "PUMP 3"))
+        self.info.setText(_translate("MainWindow", "Info"))
+        self.menu.setText(_translate("MainWindow", "MENU"))
+        self.namePump.setText(_translate("MainWindow", "MICROFLUID PUMP "))
+
+    def show_logo(self):
+        self.logo.setPixmap(QtGui.QPixmap("8916abae7ffe8ea0d7ef.jpg"))
+
+    def show_info(self):
+        msg = QMessageBox()
+        msg.setWindowTitle("Information of Microfluid Pump")
+
+        msg.setText("This is Microfluid Pump by MEMS Lab - UET, VNU, HaNoi")
+
+        x = msg.exec_()
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
+
