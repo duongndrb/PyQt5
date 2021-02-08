@@ -1,0 +1,2 @@
+raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'
